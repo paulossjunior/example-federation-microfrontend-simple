@@ -13,8 +13,11 @@ export default defineConfig({
       },
       shared: ['vue'],
     }),
-  },
+  ],
   server: {
     port: 5004,
+  },
+  build: {
+    target: 'esnext'
   },
 });
