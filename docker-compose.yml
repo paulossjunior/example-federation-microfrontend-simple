@@ -1,0 +1,46 @@
+version: '3.8'
+
+services:
+  design-system:
+    build: ./design-system
+    ports:
+      - "5001:80"
+    networks:
+      - mfe-network
+
+  auth-mfe:
+    build: ./auth-mfe
+    ports:
+      - "5002:80"
+    networks:
+      - mfe-network
+
+  product-mfe:
+    build: ./product-mfe
+    ports:
+      - "5003:80"
+    networks:
+      - mfe-network
+
+  sales-mfe:
+    build: ./sales-mfe
+    ports:
+      - "5004:80"
+    networks:
+      - mfe-network
+
+  main-app:
+    build: ./main-app
+    ports:
+      - "5000:80"
+    networks:
+      - mfe-network
+    depends_on:
+      - design-system
+      - auth-mfe
+      - product-mfe
+      - sales-mfe
+
+networks:
+  mfe-network:
+    driver: bridge
