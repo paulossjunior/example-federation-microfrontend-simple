@@ -26,4 +26,4 @@ docker-compose up --build
 
 * **Main**: exemplo simples de micro front-end
 * **mvc**: exemplo aplicando o padrão MVC nos módulos.
-* **crud-component**: exemplo aplicando componentes de CRUD junto com padrão MVC nos módulos. Neste exemplo, o design-system foi transformado em uma lib e essa lib foi reusada em outros projetos.
+* **crud-component**: exemplo aplicando componentes de CRUD junto com padrão MVC nos módulos. Neste exemplo, o design-system foi transformado em uma [lib](https://www.npmjs.com/package/design-system-paulossjunior) e essa lib foi reusada em outros projetos.
