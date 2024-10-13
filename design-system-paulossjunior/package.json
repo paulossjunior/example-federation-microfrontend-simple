@@ -1,6 +1,6 @@
 {
   "name": "design-system-paulossjunior",
-  "version": "0.0.12",
+  "version": "0.0.17",
   "main": "dist/design-system-paulossjunior.umd.js",
   "module": "dist/design-system-paulossjunior.es.js",
   "exports": {
