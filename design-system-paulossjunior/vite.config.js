@@ -1,13 +1,15 @@
 import { defineConfig } from 'vite';
+import commonjs from 'vite-plugin-commonjs';
 import vue from '@vitejs/plugin-vue';
 
 export default defineConfig({
-  plugins: [vue()],
+  plugins: [vue(),commonjs()],
   build: {
     lib: {
       entry: 'src/index.js',  // Entry point
-      name: 'DesignSystem',
-      fileName: (format) => `index.${format}.js`
+      name: 'design-system-paulossjunior',
+      fileName: (format) => `design-system-paulossjunior.${format}.js`,
+      formats: ['es', 'umd']
     },
     outDir: 'dist',  // Output directory
     rollupOptions: {
