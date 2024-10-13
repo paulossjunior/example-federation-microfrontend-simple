@@ -8,9 +8,9 @@ export default defineConfig({
     federation({
       name: 'mainApp',
       remotes: {
-        authMFE: 'http://localhost:5002/assets/remoteEntry.js',
-        productMFE: 'http://localhost:5003/assets/remoteEntry.js',
-        salesMFE: 'http://localhost:5004/assets/remoteEntry.js',
+        authMFE: 'http://localhost:5000/auth/assets/remoteEntry.js',
+        productMFE: 'http://localhost:5000/products/assets/remoteEntry.js',
+        salesMFE: 'http://localhost:5000/sales/assets/remoteEntry.js',
       },
       shared: ['vue'],
     }),
