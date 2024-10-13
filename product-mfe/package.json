@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "axios": "^1.7.7",
+    "design-system-paulossjunior": "^0.0.12",
     "vue": "^3.5.10"
   },
   "devDependencies": {

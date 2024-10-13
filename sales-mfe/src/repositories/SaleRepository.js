@@ -1,15 +1,15 @@
 // src/repositories/ProductRepository.js
-import Product from '../model/Product.js';
+import Product from '../model/Sale.js';
 
-export default class ProductRepository {
+export default class SaleRepository {
   constructor(apiClient) {
     this.apiClient = apiClient; // Axios ou Fetch API
   }
 
   async fetchAllProducts() {
     try {
-      const response = await this.apiClient.get('/products');
-      return response.data.map(product => new Product(product.id, product.name, product.price));
+      const response = await this.apiClient.get('/sals');
+      return response.data.map(product => new Sale(product.id, product.name, product.price));
     } catch (error) {
       console.error("Erro ao buscar produtos", error);
       return [];
