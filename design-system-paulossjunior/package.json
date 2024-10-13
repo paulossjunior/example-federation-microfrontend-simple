@@ -1,0 +1,31 @@
+{
+  "name": "design-system-paulossjunior",
+  "private": false,
+  "version": "0.0.8",
+  "main": "dist/index.js",  
+  "module": "dist/index.mjs", 
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs", 
+      "require": "./dist/index.js"   
+    }
+  },
+  "type": "module",
+  "root": "src",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "axios": "^1.7.7",
+    "vue": "^3.5.10"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.1.4",
+    "vite": "^5.4.8"
+  }
+}

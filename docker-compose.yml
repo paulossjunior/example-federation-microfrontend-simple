@@ -1,13 +1,6 @@
 version: '3.8'
 
 services:
-  design-system:
-    build: ./design-system
-    ports:
-      - "5001:80"
-    networks:
-      - mfe-network
-
   auth-mfe:
     build: ./auth-mfe
     ports:
@@ -36,7 +29,6 @@ services:
     networks:
       - mfe-network
     depends_on:
-      - design-system
       - auth-mfe
       - product-mfe
       - sales-mfe
