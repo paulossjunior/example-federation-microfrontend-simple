@@ -10,6 +10,7 @@ export default defineConfig({
       filename: 'remoteEntry.js',
       exposes: {
         './Login': './src/components/Login.vue',
+        './LoginMVC': './src/view/Login.vue',
       },
       shared: ['vue'],
     }),

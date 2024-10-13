@@ -10,6 +10,7 @@ export default defineConfig({
       filename: 'remoteEntry.js',
       exposes: {
         './ProductList': './src/components/ProductList.vue',
+        './ProductListCRUD': './src/view/ProductList.vue',
       },
       shared: ['vue'],
     }),

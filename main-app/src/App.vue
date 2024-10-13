@@ -1,9 +1,8 @@
 <template>
   <div id="app">
     <h1>Aplicação Principal</h1>
-    <design-system-button type="primary">Clique Aqui</design-system-button>
-    <auth-login></auth-login>
-    <product-list></product-list>
+    <LoginMVC></LoginMVC>
+    <product-list-CRUD></product-list-CRUD>
     <sales></sales>
   </div>
 </template>
@@ -13,9 +12,8 @@ import { defineAsyncComponent } from 'vue';
 
 export default {
   components: {
-    'design-system-button': defineAsyncComponent(() => import('designSystem/Button')),
-    'auth-login': defineAsyncComponent(() => import('authMFE/Login')),
-    'product-list': defineAsyncComponent(() => import('productMFE/ProductList')),
+    'product-list-CRUD': defineAsyncComponent(() => import('productMFE/ProductListCRUD')),
+    'LoginMVC': defineAsyncComponent(() => import('authMFE/LoginMVC')),
     'sales': defineAsyncComponent(() => import('salesMFE/Sales')),
      },
 };
