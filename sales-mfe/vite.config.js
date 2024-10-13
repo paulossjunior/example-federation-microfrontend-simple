@@ -16,6 +16,15 @@ export default defineConfig({
   ],
   server: {
     port: 5004,
+    publicDir: 'public', // Certifique-se de que este caminho está correto
+    cors: {
+      origin: '*', // Permite que qualquer origem acesse o recurso
+      methods: ['GET', 'HEAD', 'PUT', 'PATCH', 'POST', 'DELETE'],
+      credentials: true,
+    },
+    headers: {
+      'Access-Control-Allow-Origin':  '*', // Permite requisições de qualquer origem
+    },
   },
   build: {
     target: 'esnext'
