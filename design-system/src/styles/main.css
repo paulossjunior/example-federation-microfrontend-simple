@@ -1,0 +1,12 @@
+/* src/styles/main.css */
+body {
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .btn {
+    background-color: #42b883;
+    color: white;
+    border-radius: 4px;
+    padding: 10px 20px;
+  }
+  
