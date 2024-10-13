@@ -5,7 +5,7 @@
     :headers="['id', 'name', 'price']"
     url="/api/products"
   >
-    <template #form-fields>
+    <template #form-fields="{ model }">
       <input v-model="model.name" placeholder="Nome do Produto" />
       <input v-model="model.price" placeholder="Preço" type="number" />
     </template>
