@@ -9,6 +9,9 @@ export default defineConfig({
       name: 'mainApp',
       remotes: {
         designSystem: 'http://localhost:5001/assets/remoteEntry.js',
+        authMFE: 'http://localhost:5002/assets/remoteEntry.js',
+        productMFE: 'http://localhost:5003/assets/remoteEntry.js',
+        salesMFE: 'http://localhost:5004/assets/remoteEntry.js',
       },
       shared: ['vue'],
     }),

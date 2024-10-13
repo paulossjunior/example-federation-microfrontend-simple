@@ -1,8 +1,8 @@
 <template>
-    <button :class="buttonClass">
-      <slot></slot>
-    </button>
-  </template>
+  <button :class="buttonClass" @click="showMessage">
+    <slot></slot>
+  </button>
+</template>
   
   <script>
   export default {
@@ -17,6 +17,11 @@
         return `btn-${this.type}`;
       },
     },
+    methods: {
+      showMessage() {
+        alert('oi'); // Exibe uma mensagem "oi"
+      },
+  },
   };
   </script>
   
